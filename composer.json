@@ -1,0 +1,34 @@
+{
+    "name": "justcoded/laravel-notification-channel-twilio",
+    "description": "Provides Twilio notification channel for Laravel",
+    "keywords": ["laravel", "twilio", "notification", "sms", "call", "mms"],
+    "authors": [
+        {
+            "name": "JustCoded Team",
+            "email": "hello@justcoded.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "twilio/sdk": "~6.0",
+        "illuminate/notifications": "^5.8 || ^6.0 || ^7.0 || ^8.0",
+        "illuminate/support": "^5.8 || ^6.0 || ^7.0 || ^8.0",
+        "illuminate/events": "^5.8 || ^6.0 || ^7.0 || ^8.0",
+        "illuminate/queue": "^5.8 || ^6.0 || ^7.0 || ^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Twilio\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotificationChannels\\Twilio\\TwilioProvider"
+            ]
+        }
+    }
+}
